@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Collection | Bags & Watches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background: #f8f8f8;
+            color: #222;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            background: url('https://picsum.photos/id/1005/800/1200') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px 20px;
+            color: white;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .btn-wa {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 14px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .section {
+            padding: 30px 20px;
+        }
+        .section h2 {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #111;
+        }
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .feature {
+            background: #f3f3f3;
+            padding: 16px;
+            border-radius: 10px;
+        }
+        .feature h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            aspect-ratio: 1/1.2;
+        }
+        .cta-box {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 20px 0;
+        }
+        .cta-box h2 {
+            color: white;
+        }
+        .cta-box .btn-wa {
+            margin-top: 20px;
+            background: white;
+            color: #111;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+        .fixed-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .fixed-wa img {
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 首屏 -->
+    <div class="hero">
+        <h1>Timeless Luxury Collection</h1>
+        <p>Premium Bags • Watches • Apparel<br>Worldwide Shipping to US & EU</p>
+        <a href="https://wa.me/1234567890" class="btn-wa" target="_blank">Get Full Catalog on WhatsApp</a>
+    </div>
+
+    <!-- 卖点 -->
+    <div class="section">
+        <h2>Why Choose Us</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Premium Quality</h3>
+                <p>Fine materials & expert craftsmanship for daily & collection use.</p>
+            </div>
+            <div class="feature">
+                <h3>Exclusive Designs</h3>
+                <p>Classic minimalist styles, timeless and elegant.</p>
+            </div>
+            <div class="feature">
+                <h3>Discreet Shipping</h3>
+                <p>Safe, fast & private delivery to US, UK & EU.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品展示 -->
+    <div class="section">
+        <h2>Our Collection</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://picsum.photos/id/1058/300/360" alt="Luxury Bag">
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/id/1062/300/360" alt="Watch">
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/id/1048/300/360" alt="Apparel">
+            </div>
+        </div>
+    </div>
+
+    <!-- 强转化CTA -->
+    <div class="cta-box">
+        <h2>Want More Styles & Prices?</h2>
+        <p>Message us on WhatsApp for the latest catalog</p>
+        <a href="https://wa.me/1234567890" class="btn-wa" target="_blank">Chat Now on WhatsApp</a>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        Shipping to US & EU | Discreet Delivery<br>
+        Contact: WhatsApp Only
+    </footer>
+</div>
+
+<!-- 悬浮WhatsApp按钮 -->
+<a href="https://wa.me/1234567890" class="fixed-wa" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+</a>
+
+</body>
+</html>
